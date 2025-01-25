@@ -1,0 +1,59 @@
+body {
+  margin: 100px;
+}
+
+.header_title {
+  font-family: "Merriweather";
+  font-size: 32px;
+}
+
+.nav {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 168px;
+}
+
+.nav_links {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav_links li {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 16px;
+  padding: 16px;
+}
+.nav_links li:nth-child(2) {
+  background-color: #849fff;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ddd;
+  overflow: hidden;
+  height: 64px; /* Same height as the input */
+  width: 327px; /* Matches your input width */
+}
+
+#search {
+  flex: 1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  height: 100%; /* Matches parent height */
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
