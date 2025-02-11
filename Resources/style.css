@@ -59,6 +59,14 @@ button {
 }
 .users_list {
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
 }
-.users {
+.users_list p {
+  display: grid;
+  justify-content: center;
+  color: #516fd4;
+  border: 1px solid #bfc8e6;
+  border-radius: 50px;
 }
