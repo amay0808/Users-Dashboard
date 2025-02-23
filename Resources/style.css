@@ -57,16 +57,50 @@ button {
   background-color: transparent;
   border: none;
 }
+/* .users {
+  display: flex;
+  justify-content: space-between;
+}
 .users_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style-type: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
 }
 .users_list p {
-  display: grid;
-  justify-content: center;
   color: #516fd4;
   border: 1px solid #bfc8e6;
   border-radius: 50px;
+} */
+.users_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.users_list li {
+  height: 327px;
+  width: 208px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(81, 111, 212, 0.04);
+}
+
+.users_list p {
+  color: #516fd4;
+  border: 1px solid #151b32;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+.users_list img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
