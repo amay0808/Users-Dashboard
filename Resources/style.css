@@ -67,27 +67,54 @@ button {
 
 .users_list li {
   display: flex;
-  flex-direction: row; /* Ensures image on the left, text on the right */
-  align-items: center; /* Aligns items vertically */
+  flex-direction: column;
+  align-items: flex-start;
   background-color: rgba(81, 111, 212, 0.04);
   padding: 16px;
-  gap: 16px; /* Space between image and text */
+  padding: 20px;
+  border-radius: 10px;
+  width: 327px;
+}
+.user_info h2,
+.user_info h3 {
+  margin: 0;
 }
 
+.user_profile_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
 .users_list p {
+  margin: 0;
   color: #516fd4;
-  border: 1px solid #151b32;
+  border: 1px solid #516fd4; /* Match the blue color instead of #151b32 */
   border-radius: 50px;
   padding: 5px 10px;
+  font-size: 14px; /* Add appropriate font size */
+  display: inline-block; /* Ensure proper display */
 }
 .user_info {
   display: flex;
-  flex-direction: column; /* Stacks h2, h3, p elements */
+  flex-direction: column;
+}
+
+.user_tags {
+  display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  gap: 8px; /* Add space between tags */
+  width: 100%;
 }
 .users_list img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-bottom: 10px;
+}
+.users_list li:nth-child(2) {
+  box-shadow: 0 0 10px #bfc8e5;
+  border: 1px solid rgba(132, 159, 255, 1); /* Add width and style */
 }
