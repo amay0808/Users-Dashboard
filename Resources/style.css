@@ -1,23 +1,18 @@
 body {
-  margin: 100px;
+  padding: 100px;
+  background-color: #f5f1eb;
 }
 
 .header_title {
-  font-family: "Merriweather";
+  font-family: "Merriweather", serif;
   font-size: 32px;
 }
 
 .nav {
-  flex-direction: row;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-right: 168px;
-}
-
-.nav_links {
-  display: flex;
-  list-style-type: none;
 }
 
 .nav_links li {
@@ -28,37 +23,54 @@ body {
   margin-right: 16px;
   padding: 16px;
 }
+
 .nav_links li:nth-child(2) {
   color: white;
   background-color: #849fff;
-  padding: 16px;
   border-radius: 10px;
 }
+
 .nav_links li:hover {
   cursor: pointer;
+  color: white;
+  background-color: #849fff;
+  border-radius: 10px;
 }
 
 .search-bar {
+  position: relative;
   display: flex;
   align-items: center;
   border: 2px solid #ddd;
+  border-radius: 5px;
   overflow: hidden;
-  height: 64px; /* Same height as the input */
-  width: 327px; /* Matches your input width */
+  height: 64px;
+  width: 327px;
 }
 
 #search {
   flex: 1;
   border: none;
-  padding: 10px 15px 10px 40px; /* Extra left padding for the icon */
+  padding: 10px 15px 10px 48px;
   font-size: 16px;
   outline: none;
   font-family: "Poppins", sans-serif;
-  height: 100%; /* Matches parent height */
-  background-image: url("Resources/images/search.svg"); /* Path to your image */
-  background-position: 10px center; /* Adjust position */
-  background-size: 20px 20px;
+  width: 100%;
+  height: 100%;
+  background-image: url("/Resources/images/search.svg");
+  background-position: 8px center;
+  background-size: 24px 24px;
   background-repeat: no-repeat;
+}
+
+.search-bar button {
+  margin-right: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+#search::placeholder {
+  color: #151b32;
 }
 
 button {
@@ -78,15 +90,16 @@ button {
   flex-direction: column;
   align-items: flex-start;
   background-color: rgba(81, 111, 212, 0.04);
-  padding: 16px;
   padding: 20px;
   border-radius: 10px;
   width: 327px;
 }
+
 .users_list li:hover {
-  border: 1px solid rgba(191, 200, 229, 1); /* Add width and style */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add drop shadow effect */
+  border: 1px solid rgba(191, 200, 229, 1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .user_info h2,
 .user_info h3 {
   margin: 0;
@@ -98,15 +111,17 @@ button {
   width: 100%;
   margin-bottom: 16px;
 }
+
 .users_list p {
   margin: 0;
   color: #516fd4;
-  border: 1px solid black; /* Match the blue color instead of #151b32 */
+  border: 1px solid #516fd4;
   border-radius: 50px;
   padding: 5px 10px;
-  font-size: 14px; /* Add appropriate font size */
-  display: inline-block; /* Ensure proper display */
+  font-size: 14px;
+  display: inline-block;
 }
+
 .user_info {
   margin-top: 24px;
   margin-left: 16px;
@@ -118,10 +133,13 @@ button {
   margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  gap: 8px; /* Add space between tags */
+  gap: 8px;
   width: 100%;
 }
+.user_tags:hover {
+  cursor: pointer;
+}
+
 .users_list img {
   width: 100px;
   height: 100px;
