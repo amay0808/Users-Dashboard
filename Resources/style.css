@@ -29,6 +29,7 @@ body {
   padding: 16px;
 }
 .nav_links li:nth-child(2) {
+  color: white;
   background-color: #849fff;
   padding: 16px;
   border-radius: 10px;
@@ -97,6 +98,7 @@ button {
   display: inline-block; /* Ensure proper display */
 }
 .user_info {
+  margin-top: 24px;
   margin-left: 16px;
   display: flex;
   flex-direction: column;
@@ -117,7 +119,6 @@ button {
   margin-bottom: 10px;
 }
 .users_list li:nth-child(2) {
-  width: 292px;
-  box-shadow: 0 0 10px #bfc8e5;
-  border: 1px solid rgba(132, 159, 255, 1); /* Add width and style */
+  border: 1px solid rgba(191, 200, 229, 1); /* Add width and style */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add drop shadow effect */
 }
