@@ -34,6 +34,9 @@ body {
   padding: 16px;
   border-radius: 10px;
 }
+.nav_links li:hover {
+  cursor: pointer;
+}
 
 .search-bar {
   display: flex;
@@ -47,11 +50,15 @@ body {
 #search {
   flex: 1;
   border: none;
-  padding: 10px 15px;
+  padding: 10px 15px 10px 40px; /* Extra left padding for the icon */
   font-size: 16px;
   outline: none;
   font-family: "Poppins", sans-serif;
   height: 100%; /* Matches parent height */
+  background-image: url("Resources/images/search.svg"); /* Path to your image */
+  background-position: 10px center; /* Adjust position */
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
 }
 
 button {
@@ -76,6 +83,10 @@ button {
   border-radius: 10px;
   width: 327px;
 }
+.users_list li:hover {
+  border: 1px solid rgba(191, 200, 229, 1); /* Add width and style */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add drop shadow effect */
+}
 .user_info h2,
 .user_info h3 {
   margin: 0;
@@ -84,7 +95,6 @@ button {
 .user_profile_section {
   display: flex;
   flex-direction: row;
-  align-items: center;
   width: 100%;
   margin-bottom: 16px;
 }
@@ -117,8 +127,4 @@ button {
   height: 100px;
   border-radius: 50%;
   margin-bottom: 10px;
-}
-.users_list li:nth-child(2) {
-  border: 1px solid rgba(191, 200, 229, 1); /* Add width and style */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add drop shadow effect */
 }
