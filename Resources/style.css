@@ -103,6 +103,7 @@ button {
 }
 
 .user_tags {
+  margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
